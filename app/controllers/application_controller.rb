@@ -26,7 +26,6 @@ class ApplicationController < Sinatra::Base
       # check if a user with thise email exists
       # if so, set the session
       user = User.find_by(:email => email)
-      binding.pry
       if user && user.authenticate(password)
         # if I find a user AND I can authenticate that user with their password, then I log them in
         session[:email] = user.email
