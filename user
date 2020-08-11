@@ -1,0 +1,16 @@
+
+[1mFrom:[0m /mnt/c/Users/dpwel/.atom/.learn-ide/home/eager-metric-5960/temporary/sinatra-authentication-lv/app/controllers/application_controller.rb:23 ApplicationController#login:
+
+    [1;34m19[0m: [32mdef[0m [1;34mlogin[0m(email, password)
+    [1;34m20[0m:   [1;34m# check if a user with thise email exists[0m
+    [1;34m21[0m:   [1;34m# if so, set the session[0m
+    [1;34m22[0m:   user = [1;34;4mUser[0m.find_by([33m:email[0m => email)
+ => [1;34m23[0m:   binding.pry
+    [1;34m24[0m:   [32mif[0m user && user.authenticate(password)
+    [1;34m25[0m:     [1;34m# if I find a user AND I can authenticate that user with their password, then I log them in[0m
+    [1;34m26[0m:     session[[33m:email[0m] = user.email
+    [1;34m27[0m:   [32melse[0m 
+    [1;34m28[0m:     redirect [31m[1;31m'[0m[31m/login[1;31m'[0m[31m[0m
+    [1;34m29[0m:   [32mend[0m
+    [1;34m30[0m: [32mend[0m
+

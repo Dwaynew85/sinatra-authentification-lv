@@ -1,0 +1,5 @@
+A demo session with sinatra and active record for securing passwords.
+
+Issues:
+sessions[:email] would not save.
+threw and error in application_controller line 24. I don't know why
